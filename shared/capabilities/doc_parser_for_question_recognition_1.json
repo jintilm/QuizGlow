@@ -1,0 +1,30 @@
+{
+  "id": "doc_parser_for_question_recognition_1",
+  "pluginKey": "@official-plugins/ai-doc-parser",
+  "pluginVersion": "1.0.16",
+  "name": "Word/PDF文档解析用于题目识别",
+  "description": "解析用户上传的Word或PDF文档，提取纯文本内容，供后续题目识别环节使用。",
+  "icon": "",
+  "paramsSchema": {
+    "type": "object",
+    "properties": {
+      "document_file": {
+        "description": "用户上传的Word/PDF文档文件",
+        "items": {
+          "type": "string"
+        },
+        "type": "array",
+        "format": "plugin-file-url"
+      }
+    },
+    "required": [
+      "document_file"
+    ]
+  },
+  "formValue": {
+    "fileUrl": "{{input.document_file}}"
+  },
+  "createdAt": 1782659064041,
+  "updatedAt": 1782659064041,
+  "createdBy": 7583946127855078351
+}
